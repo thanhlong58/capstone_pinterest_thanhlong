@@ -1,0 +1,350 @@
+{
+	"info": {
+		"_postman_id": "d3235e54-d419-4a3c-9d9f-de04ceaed215",
+		"name": "Bài tập capstone Pinterest node33",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26735517",
+		"_collection_link": "https://blue-capsule-80976.postman.co/workspace/Api-qu%E1%BA%A3n-l%C3%BD-sinh-vi%C3%AAn-~3c4b8140-81a7-4aa5-a5d5-44ffa398d6cc/collection/26735517-d3235e54-d419-4a3c-9d9f-de04ceaed215?action=share&source=collection_link&creator=26735517"
+	},
+	"item": [
+		{
+			"name": "Người dùng đăng ký",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ho_ten\" : \"\",\r\n    \"mat_khau\": \"\",\r\n    \"email\" : \"\",\r\n    \"tuoi\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/sign-up",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Người dùng đăng nhập ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"thanhlong123@gmail.com\",\r\n     \"mat_khau\" : \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/sign-in",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách ảnh ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/pic/get-pic",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tìm kiếm danh sách ảnh theo tên ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/pic/get-pic-by-name/cho",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pic-by-name",
+						"cho"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy thông tin ảnh và người tạo bằng id ảnh ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/pic/get-pic-detail/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pic-detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy thông tin bình luận theo id ảnh ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/pic/get-comment-detail/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-comment-detail",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kiểm tra hình đã save hay chưa ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy thông tin người dùng",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/get-user/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách ảnh đã lưu theo user id ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sach ảnh đã tạo theo user id ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/get-created-images/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"get-created-images",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lấy danh sách ảnh liên quan ở trang chi tiết",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/pic/get-pics-related/1",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"get-pics-related",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lưu ảnh dựa vào hình id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thêm một ảnh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "nguoi_dung_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mo_ta",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "ten_hinh",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/pic/post-pic",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"pic",
+						"post-pic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chỉnh sửa thông tin người dùng",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"ho_ten\" : \"User Two\",\r\n   \"mat_khau\": \"password2\",\r\n   \"email\" : \"user2@example.com\",\r\n   \"tuoi\" : \"29\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/update-user/2",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"update-user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xóa hình đã tạo theo user id ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8080/api",
+			"type": "string"
+		}
+	]
+}
